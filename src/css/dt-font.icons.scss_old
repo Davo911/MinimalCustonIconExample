@@ -1,0 +1,1012 @@
+@import '../assets/fonts/DtFont/variables.scss';
+
+@font-face {
+  font-family: $dt-font-family;
+  src: url('../assets/fonts/DtFont/#{$dt-font-family}.ttf?z9a9ln') format('truetype'),
+  url('../assets/fonts/DtFont/#{$dt-font-family}.woff?z9a9ln') format('woff'),
+  url('../assets/fonts/DtFont/#{$dt-font-family}.svg?z9a9ln##{$dt-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-size: 16px;
+
+.dt-icon-font {
+  display: inline-block;
+  font: normal normal normal $font-size / 1 $dt-font-family;
+
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before {
+    text-indent: 0 !important;
+    text-align: center;
+  }
+}
+
+.df-table-asc {
+  &:before {
+    content: $df-table-asc;
+  }
+}
+.df-table-desc {
+  &:before {
+    content: $df-table-desc;
+  }
+}
+.df-bulk-action {
+  &:before {
+    content: $df-bulk-action;
+  }
+}
+.df-toggle_grid {
+  &:before {
+    content: $df-toggle_grid;
+  }
+}
+.df-toggle_table {
+  &:before {
+    content: $df-toggle_table;
+  }
+}
+.df-asset {
+  &:before {
+    content: $df-asset;
+  }
+}
+.df-database {
+  &:before {
+    content: $df-database;
+  }
+}
+.df-cup-fill {
+  &:before {
+    content: $df-cup-fill;
+  }
+}
+.df-cup {
+  &:before {
+    content: $df-cup;
+  }
+}
+.df-night-shift {
+  &:before {
+    content: $df-night-shift;
+  }
+}
+.df-late-shift {
+  &:before {
+    content: $df-late-shift;
+  }
+}
+.df-early-shift {
+  &:before {
+    content: $df-early-shift;
+  }
+}
+.df-dashboard-key-value {
+  &:before {
+    content: $df-dashboard-key-value;
+  }
+}
+.df-dashboard-summary {
+  &:before {
+    content: $df-dashboard-summary;
+  }
+}
+.df-dashboard-text {
+  &:before {
+    content: $df-dashboard-text;
+  }
+}
+.df-dashboard-status {
+  &:before {
+    content: $df-dashboard-status;
+  }
+}
+.df-dashboard-table {
+  &:before {
+    content: $df-dashboard-table;
+  }
+}
+.df-dashboard-chart {
+  &:before {
+    content: $df-dashboard-chart;
+  }
+}
+.df-status-running {
+  &:before {
+    content: $df-status-running;
+  }
+}
+.df-status-connect {
+  &:before {
+    content: $df-status-connect;
+  }
+}
+.df-status-disconnect {
+  &:before {
+    content: $df-status-disconnect;
+  }
+}
+.df-message-unknown {
+  &:before {
+    content: $df-message-unknown;
+  }
+}
+.df-status-unknown {
+  &:before {
+    content: $df-status-unknown;
+  }
+}
+.df-message-info {
+  &:before {
+    content: $df-message-info;
+  }
+}
+.df-message-warning {
+  &:before {
+    content: $df-message-warning;
+  }
+}
+.df-message-error {
+  &:before {
+    content: $df-message-error;
+  }
+}
+.df-message-okay {
+  &:before {
+    content: $df-message-okay;
+  }
+}
+.df-note-help {
+  &:before {
+    content: $df-note-help;
+  }
+}
+.df-note-info {
+  &:before {
+    content: $df-note-info;
+  }
+}
+.df-note-warning {
+  &:before {
+    content: $df-note-warning;
+  }
+}
+.df-note-error {
+  &:before {
+    content: $df-note-error;
+  }
+}
+.df-note-okay {
+  &:before {
+    content: $df-note-okay;
+  }
+}
+.df-dashboard-layout-one {
+  &:before {
+    content: $df-dashboard-layout-one;
+  }
+}
+.df-dashboard-layout-two {
+  &:before {
+    content: $df-dashboard-layout-two;
+  }
+}
+.df-dashboard-layout-three {
+  &:before {
+    content: $df-dashboard-layout-three;
+  }
+}
+.df-column-one {
+  &:before {
+    content: $df-column-one;
+  }
+}
+.df-column-two {
+  &:before {
+    content: $df-column-two;
+  }
+}
+.df-column-three {
+  &:before {
+    content: $df-column-three;
+  }
+}
+.df-column-four {
+  &:before {
+    content: $df-column-four;
+  }
+}
+.df-column-five {
+  &:before {
+    content: $df-column-five;
+  }
+}
+.df-column-six {
+  &:before {
+    content: $df-column-six;
+  }
+}
+.df-app-ramp-up {
+  &:before {
+    content: $df-app-ramp-up;
+  }
+}
+.df-app-device-monitor {
+  &:before {
+    content: $df-app-device-monitor;
+  }
+}
+.df-app-processexploration {
+  &:before {
+    content: $df-app-processexploration;
+  }
+}
+.df-app-machineconfig {
+  &:before {
+    content: $df-app-machineconfig;
+  }
+}
+.df-app-componenthistory {
+  &:before {
+    content: $df-app-componenthistory;
+  }
+}
+.df-app-componenthistory-compare {
+  &:before {
+    content: $df-app-componenthistory-compare;
+  }
+}
+.df-app-parametermonitoring {
+  &:before {
+    content: $df-app-parametermonitoring;
+  }
+}
+.df-app-analysis-portal {
+  &:before {
+    content: $df-app-analysis-portal;
+  }
+}
+.df-app-data-hub {
+  &:before {
+    content: $df-app-data-hub;
+  }
+}
+.df-app-compare {
+  &:before {
+    content: $df-app-compare;
+  }
+}
+.df-share {
+  &:before {
+    content: $df-share;
+  }
+}
+.df-start {
+  &:before {
+    content: $df-start;
+  }
+}
+.df-code {
+  &:before {
+    content: $df-code;
+  }
+}
+.df-regular-expression {
+  &:before {
+    content: $df-regular-expression;
+  }
+}
+.df-case-sensitive {
+  &:before {
+    content: $df-case-sensitive;
+  }
+}
+.df-shop {
+  &:before {
+    content: $df-shop;
+  }
+}
+.df-contact {
+  &:before {
+    content: $df-contact;
+  }
+}
+.df-mail {
+  &:before {
+    content: $df-mail;
+  }
+}
+.df-table {
+  &:before {
+    content: $df-table;
+  }
+}
+.df-details {
+  &:before {
+    content: $df-details;
+  }
+}
+.df-lock {
+  &:before {
+    content: $df-lock;
+  }
+}
+.df-lock-open {
+  &:before {
+    content: $df-lock-open;
+  }
+}
+.df-export {
+  &:before {
+    content: $df-export;
+  }
+}
+.df-dashboard {
+  &:before {
+    content: $df-dashboard;
+  }
+}
+.df-grid {
+  &:before {
+    content: $df-grid;
+  }
+}
+.df-axis-off {
+  &:before {
+    content: $df-axis-off;
+  }
+}
+.df-axis-on {
+  &:before {
+    content: $df-axis-on;
+  }
+}
+.df-image {
+  &:before {
+    content: $df-image;
+  }
+}
+.df-move-vertical {
+  &:before {
+    content: $df-move-vertical;
+  }
+}
+.df-move-horizontal {
+  &:before {
+    content: $df-move-horizontal;
+  }
+}
+.df-move-all-left {
+  &:before {
+    content: $df-move-all-left;
+  }
+}
+.df-move-all-right {
+  &:before {
+    content: $df-move-all-right;
+  }
+}
+.df-arrow-n {
+  &:before {
+    content: $df-arrow-n;
+  }
+}
+.df-move-up {
+  &:before {
+    content: $df-move-up;
+  }
+}
+.df-arrow-s {
+  &:before {
+    content: $df-arrow-s;
+  }
+}
+.df-move-down {
+  &:before {
+    content: $df-move-down;
+  }
+}
+.df-arrow-e {
+  &:before {
+    content: $df-arrow-e;
+  }
+}
+.df-move-right {
+  &:before {
+    content: $df-move-right;
+  }
+}
+.df-arrow-w {
+  &:before {
+    content: $df-arrow-w;
+  }
+}
+.df-move-left {
+  &:before {
+    content: $df-move-left;
+  }
+}
+.df-bell {
+  &:before {
+    content: $df-bell;
+  }
+}
+.df-legend-off {
+  &:before {
+    content: $df-legend-off;
+  }
+}
+.df-legend-on {
+  &:before {
+    content: $df-legend-on;
+  }
+}
+.df-radio-unchecked {
+  &:before {
+    content: $df-radio-unchecked;
+  }
+}
+.df-radio-checked {
+  &:before {
+    content: $df-radio-checked;
+  }
+}
+.df-radio-checked-alt {
+  &:before {
+    content: $df-radio-checked-alt;
+  }
+}
+.df-radio-unchecked-alt {
+  &:before {
+    content: $df-radio-unchecked-alt;
+  }
+}
+.df-checkbox-unchecked {
+  &:before {
+    content: $df-checkbox-unchecked;
+  }
+}
+.df-checkbox-checked {
+  &:before {
+    content: $df-checkbox-checked;
+  }
+}
+.df-axis-auto {
+  &:before {
+    content: $df-axis-auto;
+  }
+}
+.df-axis-user {
+  &:before {
+    content: $df-axis-user;
+  }
+}
+.df-opt-in {
+  &:before {
+    content: $df-opt-in;
+  }
+}
+.df-opt-out {
+  &:before {
+    content: $df-opt-out;
+  }
+}
+.df-undo {
+  &:before {
+    content: $df-undo;
+  }
+}
+.df-redo {
+  &:before {
+    content: $df-redo;
+  }
+}
+.df-reload {
+  &:before {
+    content: $df-reload;
+  }
+}
+.df-visible {
+  &:before {
+    content: $df-visible;
+  }
+}
+.df-invisible {
+  &:before {
+    content: $df-invisible;
+  }
+}
+.df-filter-on {
+  &:before {
+    content: $df-filter-on;
+  }
+}
+.df-filter-off {
+  &:before {
+    content: $df-filter-off;
+  }
+}
+.df-clock-on {
+  &:before {
+    content: $df-clock-on;
+  }
+}
+.df-clock-off {
+  &:before {
+    content: $df-clock-off;
+  }
+}
+.df-settings {
+  &:before {
+    content: $df-settings;
+  }
+}
+.df-gear {
+  &:before {
+    content: $df-gear;
+  }
+}
+.df-color {
+  &:before {
+    content: $df-color;
+  }
+}
+.df-legend {
+  &:before {
+    content: $df-legend;
+  }
+}
+.df-align-down {
+  &:before {
+    content: $df-align-down;
+  }
+}
+.df-align-up {
+  &:before {
+    content: $df-align-up;
+  }
+}
+.df-angle-down {
+  &:before {
+    content: $df-angle-down;
+  }
+}
+.df-angle-left {
+  &:before {
+    content: $df-angle-left;
+  }
+}
+.df-angle-right {
+  &:before {
+    content: $df-angle-right;
+  }
+}
+.df-angle-up {
+  &:before {
+    content: $df-angle-up;
+  }
+}
+.df-arrows {
+  &:before {
+    content: $df-arrows;
+  }
+}
+.df-arrows-se {
+  &:before {
+    content: $df-arrows-se;
+  }
+}
+.df-arrows-sw {
+  &:before {
+    content: $df-arrows-sw;
+  }
+}
+.df-close-up {
+  &:before {
+    content: $df-close-up;
+  }
+}
+.df-open-up {
+  &:before {
+    content: $df-open-up;
+  }
+}
+.df-close {
+  &:before {
+    content: $df-close;
+  }
+}
+.df-folder {
+  &:before {
+    content: $df-folder;
+  }
+}
+.df-goto {
+  &:before {
+    content: $df-goto;
+  }
+}
+.df-ellipsis-v {
+  &:before {
+    content: $df-ellipsis-v;
+  }
+}
+.df-ellipsis-h {
+  &:before {
+    content: $df-ellipsis-h;
+  }
+}
+.df-plus {
+  &:before {
+    content: $df-plus;
+  }
+}
+.df-minus {
+  &:before {
+    content: $df-minus;
+  }
+}
+.df-calendar {
+  &:before {
+    content: $df-calendar;
+  }
+}
+.df-calendar-today {
+  &:before {
+    content: $df-calendar-today;
+  }
+}
+.df-user {
+  &:before {
+    content: $df-user;
+  }
+}
+.df-multi-user {
+  &:before {
+    content: $df-multi-user;
+  }
+}
+.df-info {
+  &:before {
+    content: $df-info;
+  }
+}
+.df-question {
+  &:before {
+    content: $df-question;
+  }
+}
+.df-check {
+  &:before {
+    content: $df-check;
+  }
+}
+.df-ban {
+  &:before {
+    content: $df-ban;
+  }
+}
+.df-warning {
+  &:before {
+    content: $df-warning;
+  }
+}
+.df-bolt {
+  &:before {
+    content: $df-bolt;
+  }
+}
+.df-search {
+  &:before {
+    content: $df-search;
+  }
+}
+.df-zoom {
+  &:before {
+    content: $df-zoom;
+  }
+}
+.df-zoom-x {
+  &:before {
+    content: $df-zoom-x;
+  }
+}
+.df-zoom-y {
+  &:before {
+    content: $df-zoom-y;
+  }
+}
+.df-star-fill {
+  &:before {
+    content: $df-star-fill;
+  }
+}
+.df-star {
+  &:before {
+    content: $df-star;
+  }
+}
+.df-edit {
+  &:before {
+    content: $df-edit;
+  }
+}
+.df-pencil {
+  &:before {
+    content: $df-pencil;
+  }
+}
+.df-multi-edit {
+  &:before {
+    content: $df-multi-edit;
+  }
+}
+.df-copy {
+  &:before {
+    content: $df-copy;
+  }
+}
+.df-save {
+  &:before {
+    content: $df-save;
+  }
+}
+.df-trash {
+  &:before {
+    content: $df-trash;
+  }
+}
+.df-back {
+  &:before {
+    content: $df-back;
+  }
+}
+.df-forward {
+  &:before {
+    content: $df-forward;
+  }
+}
+.df-download {
+  &:before {
+    content: $df-download;
+  }
+}
+.df-upload {
+  &:before {
+    content: $df-upload;
+  }
+}
+.df-upload-debug {
+  &:before {
+    content: $df-upload-debug;
+  }
+}
+.df-logout {
+  &:before {
+    content: $df-logout;
+  }
+}
+.df-full-timerange {
+  &:before {
+    content: $df-full-timerange;
+  }
+}
+.df-left-timerange {
+  &:before {
+    content: $df-left-timerange;
+  }
+}
+.df-right-timerange {
+  &:before {
+    content: $df-right-timerange;
+  }
+}
+.df-play {
+  &:before {
+    content: $df-play;
+  }
+}
+.df-filter {
+  &:before {
+    content: $df-filter;
+  }
+}
+.df-load {
+  &:before {
+    content: $df-load;
+  }
+}
+.df-dt {
+  &:before {
+    content: $df-dt;
+  }
+}
+.df-dashboard-progress {
+  &:before {
+    content: $df-dashboard-progress;
+  }
+}
+.df-chart-progress {
+  &:before {
+    content: $df-chart-progress;
+  }
+}
+.df-dashboard-pie {
+  &:before {
+    content: $df-dashboard-pie;
+  }
+}
+.df-chart-pie {
+  &:before {
+    content: $df-chart-pie;
+  }
+}
+.df-chart-heatmap {
+  &:before {
+    content: $df-chart-heatmap;
+  }
+}
+.df-chart-scatter {
+  &:before {
+    content: $df-chart-scatter;
+  }
+}
+.df-dashboard-column {
+  &:before {
+    content: $df-dashboard-column;
+  }
+}
+.df-chart-column {
+  &:before {
+    content: $df-chart-column;
+  }
+}
+.df-chart-boxplots {
+  &:before {
+    content: $df-chart-boxplots;
+  }
+}
+.df-chart-arrow {
+  &:before {
+    content: $df-chart-arrow;
+  }
+}
+.df-alphanumeric {
+  &:before {
+    content: $df-alphanumeric;
+  }
+}
+.df-numeric {
+  &:before {
+    content: $df-numeric;
+  }
+}
+.df-unknown {
+  &:before {
+    content: $df-unknown;
+  }
+}
+.df-dots-alphanumeric {
+  &:before {
+    content: $df-dots-alphanumeric;
+  }
+}
+.df-dots-numeric {
+  &:before {
+    content: $df-dots-numeric;
+  }
+}
+.df-dots-unknown {
+  &:before {
+    content: $df-dots-unknown;
+  }
+}
+.df-marker {
+  &:before {
+    content: $df-marker;
+  }
+}
+.df-chart-range {
+  &:before {
+    content: $df-chart-range;
+  }
+}
+.df-chart-alarm {
+  &:before {
+    content: $df-chart-alarm;
+  }
+}
+.df-chart-columnrange {
+  &:before {
+    content: $df-chart-columnrange;
+  }
+}
+.df-chart-boxplot {
+  &:before {
+    content: $df-chart-boxplot;
+  }
+}
+.df-chart-triangle {
+  &:before {
+    content: $df-chart-triangle;
+  }
+}
+.df-chart-triangle-down {
+  &:before {
+    content: $df-chart-triangle-down;
+  }
+}
+.df-chart-circle {
+  &:before {
+    content: $df-chart-circle;
+  }
+}
+.df-chart-cross {
+  &:before {
+    content: $df-chart-cross;
+  }
+}
+.df-chart-empty {
+  &:before {
+    content: $df-chart-empty;
+  }
+}
+.df-chart-plus {
+  &:before {
+    content: $df-chart-plus;
+  }
+}
+.df-chart-diamond {
+  &:before {
+    content: $df-chart-diamond;
+  }
+}
+.df-chart-star {
+  &:before {
+    content: $df-chart-star;
+  }
+}
+.df-chart-square {
+  &:before {
+    content: $df-chart-square;
+  }
+}
+.df-column-sortable {
+  &:before {
+    content: $df-column-sortable;
+  }
+}
+.df-column-sortable-down {
+  &:before {
+    content: $df-column-sortable-down;
+  }
+}
+.df-column-sortable-up {
+  &:before {
+    content: $df-column-sortable-up;
+  }
+}
+.df-smallangle-down {
+  &:before {
+    content: $df-smallangle-down;
+  }
+}
+.df-smallangle-left {
+  &:before {
+    content: $df-smallangle-left;
+  }
+}
+.df-smallangle-right {
+  &:before {
+    content: $df-smallangle-right;
+  }
+}
+.df-smallangle-up {
+  &:before {
+    content: $df-smallangle-up;
+  }
+}
