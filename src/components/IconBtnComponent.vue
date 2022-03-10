@@ -1,12 +1,12 @@
 <template>
     <div class="column">
-      <q-btn color="primary" icon="android" label="On Left" />
+      <q-btn color="primary" icon="print" label="Material| print" />
       <q-separator />
-      <q-btn color="primary" icon="dt: message-okay" label="On Left" />
+      <q-btn color="primary" icon="dt: message-okay" label="MyIcons| dt: message-okay" />
       <q-separator />
-      <q-btn color="primary" icon="DetactFont df-night-shift" label="On Left" />
+      <q-btn color="primary" icon="dt: night-shift" label="MyIcons| dt: night-shift -- Should be a Moon" />
       <q-separator />
-      <q-btn color="primary" icon="detact-icon-font df-late-shift" label="On Left" />
+      <q-btn color="primary" class="detact-icon-font df-late-shift" label="MyIcons| class=detact-icon-font df-late-shift" push/>
       <q-separator />
     </div>
 </template>
